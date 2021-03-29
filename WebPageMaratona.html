@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Antonio Bernardo" />
+    <meta name="description" content="WebPage Maratona" />
+    <title>WebPage Maratona</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="StyleMaratona.css" />
+    
+</head>
+<body>
+    <div id="container">
+        <div id="logo">
+            <img src="http://marciookabe.com.br/wp-content/uploads/2016/01/coaching-digital1-300x50.jpg" alt="Imagem 300x50 logo" />
+        </div>
+        <div id="dataHora">
+            <p id="data"></p>
+            <script>
+                var hora = new Date();
+                document.getElementById("data").innerHTML = hora;
+            </script>
+        </div>
+        <div class="clearFix"></div>
+        <div id="menu">
+            <span class="itemMenu">
+                <a class="btn btn-info" href="#">PRINCIPAL</a>
+            </span>
+            <span class="itemMenu">
+                <a class="btn btn-info" href="http://www.fatecsp.br/" target="_blank" title="FATEC">FATEC</a>
+            </span><span class="itemMenu">
+                <a class="btn btn-info" href="https://www.uol.com.br/esporte/" target="_blank" title="ESPORTES">ESPORTES</a>
+            </span>
+        </div>
+        <div class="clearFix"></div>
+        <div id="destaque" class="col-lg-10 col-md-6 col-xs-12" style="background-color: cyan">
+            <img src="https://www.sicoobsc.com.br/crediserra/wp-content/uploads/sites/45/2018/10/Ca%C3%A7ador-projeto-Poupar-para-o-Futuro-foto-Aline-de-Matias-400x300.jpg" alt="Imagem 400x300 destaque" />
+            <h1>Aluno é aprovado ...</h1>
+            <p>O aluno Joãozinho é aprovado na...</p>
+        </div>
+        <div id="noticias" class="col-lg-10 col-md-6 col-xs-12" style="background-color: yellow">
+            <div class="noticia">
+                <h1>Maratona de Programação</h1>
+                <p>Algum texto sobre a maratona</p>
+            </div>
+            <div class="noticia">
+                <h1>Maratona de Programação</h1>
+                <p>Algum texto sobre a maratona</p>
+            </div>
+        </div>
+        <div id="propagandas">
+            <div class="propaganda">
+                <img src="http://www.umc.br/_img/_noticias/490/destaque.jpg" alt="Imagem 200x180 propaganda" />
+            </div>
+            <div class="propaganda">
+                <img src="http://imgsaoluiz.com.br/colegio/2019/11/Plus-Time.png" alt="Imagem 200x180 propaganda" />
+            </div>
+        </div>
+        <div class="clearFix"></div>
+        <div id="ultimasNoticias">
+            <h1>Últimas Notícias</h1>
+        </div>
+        <div id="galeria">
+            <img src="https://md-innovationtech.com/wp-content/uploads/2016/07/ONE-mac-1600x300-300x56.jpg" alt="Imagem 1600x300 noticias" /><br />
+            <input type="button" value="<" />
+            <input type="button" value=">" />
+        </div>
+    </div>
+</body>
+</html>
